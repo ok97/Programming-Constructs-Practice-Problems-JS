@@ -56,9 +56,9 @@ console.log("Hundred");
 else if(Number==1000)
 console.log("Thousand");
 else if(Number==10000)
-console.log("Ten hundred");
+console.log("Ten Thousand");
 else
-console.log("You Enter Wrong Number")
+console.log("You Enter Wrong Number"+Number)
 
 /* UC4:-Enter 3 Numbers do following arithmetic operation and find the one that 
 is maximum and minimum
