@@ -1,6 +1,6 @@
 /* Repetition Practice Problems with while loop */
 var readlineSync = require('readline-sync');
-var Choice = readlineSync.questionInt("1.Powers of 2\n2.Find the Magic Number\n3.Flip Coin problem\n4.GamblerEnter Choice:-  ");
+var Choice = readlineSync.questionInt("1.Powers of 2\n2.Find the Magic Number\n3.Flip Coin problem\n4.Gambler\nEnter Choice:-  ");
 
 switch (Choice) 
 {
