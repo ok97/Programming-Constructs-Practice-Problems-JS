@@ -1,7 +1,7 @@
 /* Repetition Practice Problems with for loop*/
 
 var readlineSync = require('readline-sync');
-var Choice = readlineSync.questionInt("1.Powers of 2\n2.Findharmonic number\n3.Find Prime\n4.Prime Numbers in range\n5.Find Factorial\n6.\nEnter Choice:- ");
+var Choice = readlineSync.questionInt("1.Powers of 2\n2.Findharmonic number\n3.Find Prime\n4.Prime Numbers in range\n5.Find Factorial\n6. N using prime factorization\nEnter Choice:- ");
 switch (Choice) 
 {
     case 1:
