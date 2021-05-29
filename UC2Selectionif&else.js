@@ -28,54 +28,40 @@ console.log("Minimum Number:- " + MinimumNumber);
 console.log("Maximum Number:- " + MaximumNumber);
 
 /* UC2:- Write a program that takes day and month from the command line and prints true if day of month is between March 20 and June 20, false otherwise.*/
-{var enteredDate=new Date();
-//read line sync use take input user
-var readlineSync = require('readline-sync');
-//Taking input from user
-var year = readlineSync.question('Enter year:- '); //Take input from user
-var month = readlineSync.question('Enter Month:- '); //Take input from user
-var date = readlineSync.question('Enter Date:- '); //Take input from user
-enteredDate.setFullYear(year,month,date);
-var date1 = new Date();
-var date2 = new Date();
-date1.setFullYear(year,3,20);
-date2.setFullYear(year,6,20);
-// Comparison
-if(enteredDate>date1 && enteredDate<date2)
-console.log("True");
-else
-console.log("False");
-}
+
 
 /* UC3:- Write a program that takes a year as input and outputs the Year is a Leap Year or not a Leap Year.
          A Leap Year checks for 4 Digit Number, Divisible by 4 and not 100 unless divisible by 400.
 */
+/*
+const readline = require('readline').createInterface({
+    input: process.stdin,
+    output: process.stdout
+  });
 
+  readline. year('Enter a year:-');*/
+
+
+
+// take input
 
 //read line sync use take input user
 var readlineSync = require('readline-sync');
+var year = readlineSync.questionInt('Enter year:- ');
 
-var year = readlineSync.question('Enter year:- '); //Take input from user
-if ((0 == year % 4) && (0 != year % 100) || (0 == year % 400))
+
+function checkLeapYear(year) 
 {
-    console.log(year+ " Is Leap year");
-}
-else
-{
-    console.log(year+ " Is Not Leap Year")
+
+    //three conditions to find out the leap year
+    if ((0 == year % 4) && (0 != year % 100) || (0 == year % 400))
+    {
+        console.log(year + ' is a leap year');
+    } else 
+    {
+        console.log(year + ' is not a leap year');
+    }
 }
 
-/* UC4:- Write a program to simulate a coin flip and print out "Heads" or "Tails" accordingly.*/
 
-
-var Result = Math.floor(Math.random()*10)%2;
-if(Result==0)
-{
-console.log("Heads");
-}
-else
-{
-    console.log("Tails");
-
-}
 
